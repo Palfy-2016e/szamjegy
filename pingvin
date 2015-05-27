@@ -1,0 +1,12 @@
+def szame(x):
+    seged=[]
+    for i in x:
+        seged.append(i)
+    print(seged)
+    for i in range(len(seged)):
+        try:
+            int(seged[i])
+            
+        except ValueError:
+            return False
+    return True
